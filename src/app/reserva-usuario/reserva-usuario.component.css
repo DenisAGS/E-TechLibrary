@@ -1,0 +1,96 @@
+.table-info{
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.5%;
+}
+
+h5{
+    color: #515656;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+table {
+    margin-top: 2px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  thead {
+    background-color: rgb(207, 207, 207);
+    border-bottom: 1px #707070;
+  }
+
+  th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #013E60;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  td{
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+.text-green {
+    color: green;
+  }
+  
+  .text-blue {
+    color: blue;
+  }
+  
+  .text-red {
+    color: red;
+  }
+
+  .acciones{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .acciones button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .btn-agregar{
+    width: 128px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(267deg, #00CF53 7.98%, #00CF53 97.97%);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .btn-eliminar{
+    width: 128px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(95deg, #E00000 0%, #E00000 94.59%);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.5);
+  }
+  

@@ -15,31 +15,34 @@
     </aside>
 
     <div class="secciones">
-        
+
         <section class="catalogo-seccion">
-            <h2>Catálogo de la Biblioteca</h2>
-            <p>Explora nuestra amplia colección de libros y recursos:</p>
-    
             <div class="filtro">
                 <label for="filtro-categoria">Filtrar por Categoría:</label>
-            <select id="filtro-categoria" [(ngModel)]="categoriaSeleccionada" (change)="filtrarPorCategoria(categoriaSeleccionada)">
-                <option value="todos">Todos</option>
-                <option value="educacion">Educacion</option>
-                <option value="fantasia">Fantasia</option>
-                <option value="historia">Historia</option>
-                <option value="juvenil">Juvenil</option>
-            </select>
+                <select id="filtro-categoria" [(ngModel)]="categoriaSeleccionada"
+                    (change)="filtrarPorCategoria(categoriaSeleccionada)">
+                    <option value="todos">Todos</option>
+                    <option value="educacion">Educacion</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="historia">Historia</option>
+                    <option value="juvenil">Juvenil</option>
+                </select>
             </div>
-            
+
             <div class="content-libros">
-                <div class="libro" *ngFor="let libro of libros" [style.display]="categoriaSeleccionada === 'todos' || categoriaSeleccionada === libro.categoria ? 'block' : 'none'">
-                  <img [src]="libro.imagen" alt="Portada del {{ libro.titulo }}">
-                  <h3>{{ libro.titulo }}</h3>
-                  <p>Autor: {{ libro.autor }}</p>
-                  <p>Categoría: {{ libro.categoria | uppercase }}</p>
+                <div class="libro" *ngFor="let libro of libros"
+                    [style.display]="categoriaSeleccionada === 'todos' || categoriaSeleccionada === libro.categoria ? 'block' : 'none'">
+                    <div class="libro-container">
+                        <img [src]="libro.imagen" alt="Portada del {{ libro.titulo }}">
+                        <div class="overlay">
+                            <h3>{{ libro.titulo }}</h3>
+                            <p>Autor: {{ libro.autor }}</p>
+                            <p>Categoría: {{ libro.categoria | uppercase }}</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
+            </div>
+
         </section>
     </div>
 

@@ -1,1 +1,60 @@
-<p>reserva-usuario works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-user></app-menu-user>
+    </aside>
+
+<div class="table-info">
+
+    <div class="acciones">
+        <h5>Mi lista de reservas</h5>
+        <div class="space">
+            <button class="btn-agregar" >Agregar</button>
+            <button class="btn-eliminar">Eliminar</button>
+        </div>
+    </div>
+
+<table border="1">
+    <thead>
+      <tr>
+        <th></th>
+        <th>ISBN</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Tipo</th>
+        <th>Categoría</th>
+        <th>Fecha de reserva</th>
+        <th>Estado del préstamo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lista of listas">
+        <td>
+            <input type="checkbox" [(ngModel)]="lista.selected" [checked]="false" />
+        </td>
+        <td>{{ lista.isbn }}</td>
+        <td>{{ lista.titulo }}</td>
+        <td>        
+            <div style="display: flex; align-items: center;">
+                <span>{{ lista.autor }}</span>
+          </div></td>
+        <td>{{ lista.tipo }}</td>
+        <td>{{ lista.categoria }}</td>
+        <td>{{ lista.reservaDate | date }}</td>
+        <td [ngClass]="getStatusColor(lista.status)">{{ lista.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
+</body>
+</html>

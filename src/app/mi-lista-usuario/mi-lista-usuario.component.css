@@ -93,3 +93,20 @@ table {
     font-size: 18px;
     font-weight: 600;
   }
+
+  #input-datos-libros{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #input-datos-libros .libros-input{
+    display: flex;
+    margin: 10px;
+  }
+
+  #input-datos-libros button{
+    background-color: #cf5300;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }

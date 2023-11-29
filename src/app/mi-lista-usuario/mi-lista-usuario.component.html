@@ -18,10 +18,38 @@
     <div class="acciones">
         <h5>Mi lista</h5>
         <div class="space">
-            <button class="btn-agregar" >Agregar</button>
+            <button class="btn-agregar" (click)="toggleAgregar()">Agregar</button>
         </div>
     </div>
 
+    <div id="input-datos-libros" *ngIf="mostrarAgregar">
+        <div class="libros-input">
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" [(ngModel)]="nuevoItem.isbn">
+        </div>
+        <div class="libros-input">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" [(ngModel)]="nuevoItem.titulo">
+        </div>
+        <div class="libros-input">
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" [(ngModel)]="nuevoItem.autor">
+        </div>
+        <div class="libros-input">
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo" [(ngModel)]="nuevoItem.tipo">
+        </div>
+        <div class="libros-input">
+            <label for="categoria">Categoria:</label>
+            <input type="text" id="categoria" [(ngModel)]="nuevoItem.categoria">
+        </div>
+        <div class="libros-input">
+            <label for="adquisionDate">Fecha de adquisicion:</label>
+            <input type="text" id="adquisionDate" [(ngModel)]="nuevoItem.adquisicionDate">
+        </div>
+    
+        <button (click)="agregarItem()">Guardar</button>
+    </div>
 <table border="1">
     <thead>
       <tr>

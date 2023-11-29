@@ -16,7 +16,6 @@ export class MiListaUsuarioComponent implements OnInit {
       adquisicionDate: new Date(2023, 0, 1),
       finalizacionDate: new Date(2023, 1, 1),
       devueltaDate: new Date(),
-      status: 'Activo'
     },
     {
       isbn: '987654321',
@@ -27,7 +26,6 @@ export class MiListaUsuarioComponent implements OnInit {
       adquisicionDate: new Date(2023, 2, 15),
       finalizacionDate: new Date(2023, 4, 1),
       devueltaDate: new Date(),
-      status: 'Devuelto'
     },
     {
       isbn: '567890123',
@@ -38,7 +36,6 @@ export class MiListaUsuarioComponent implements OnInit {
       adquisicionDate: new Date(2023, 3, 10),
       finalizacionDate: new Date(2023, 5, 20),
       devueltaDate: new Date(),
-      status: 'Vencido'
     },
     {
       isbn: '345678901',
@@ -49,7 +46,6 @@ export class MiListaUsuarioComponent implements OnInit {
       adquisicionDate: new Date(2023, 6, 5),
       finalizacionDate: new Date(2023, 8, 15),
       devueltaDate: new Date(),
-      status: 'Activo'
     },
     {
       isbn: '789012345',
@@ -60,7 +56,6 @@ export class MiListaUsuarioComponent implements OnInit {
       adquisicionDate: new Date(2023, 9, 3),
       finalizacionDate: new Date(2024, 0, 10),
       devueltaDate: new Date(),
-      status: 'Devuelto'
     },
     {
       isbn: '111222333',
@@ -71,42 +66,21 @@ export class MiListaUsuarioComponent implements OnInit {
       adquisicionDate: new Date(2023, 7, 12),
       finalizacionDate: new Date(2023, 9, 30),
       devueltaDate: new Date(),
-      status: 'Activo'
-    },
-    {
-      isbn: '444555666',
-      titulo: 'Introducción a la Inteligencia Artificial',
-      autor: 'Elena Morales',
-      tipo: 'Ebook',
-      categoria: 'Historia',
-      adquisicionDate: new Date(2023, 4, 20),
-      finalizacionDate: new Date(2023, 6, 5),
-      devueltaDate: new Date(),
-      status: 'Devuelto'
-    },
-    {
-      isbn: '777888999',
-      titulo: 'Aventuras en el Espacio Exterior',
-      autor: 'Pedro Castillo',
-      tipo: 'Libro físico',
-      categoria: 'Fantasía',
-      adquisicionDate: new Date(2023, 2, 8),
-      finalizacionDate: new Date(2023, 3, 25),
-      devueltaDate: new Date(),
-      status: 'Vencido'
-    },
-    {
-      isbn: '101112131',
-      titulo: 'Machine Learning para Todos',
-      autor: 'Ana Martínez',
-      tipo: 'Ebook',
-      categoria: 'Educación',
-      adquisicionDate: new Date(2023, 10, 1),
-      finalizacionDate: new Date(2023, 11, 15),
-      devueltaDate: new Date(),
-      status: 'Activo'
     }
 ];
+
+
+mostrarAgregar = false;
+nuevoItem = {
+  isbn: '',
+  titulo: '',
+  autor: '',
+  tipo: '',
+  categoria: '',
+  adquisicionDate: new Date(),
+  finalizacionDate: new Date(),
+  devueltaDate: new Date(),
+};
 
 getStatusColor(status: string): string {
     switch (status) {
@@ -125,4 +99,29 @@ getStatusColor(status: string): string {
   ngOnInit(): void {
   }
 
+  toggleAgregar(): void {
+    this.mostrarAgregar = !this.mostrarAgregar;
+    if (!this.mostrarAgregar) {
+      this.nuevoItem = {
+        isbn: '',
+        titulo: '',
+        autor: '',
+        tipo: '',
+        categoria: '',
+        adquisicionDate: new Date(),
+        finalizacionDate: new Date(),
+        devueltaDate: new Date(),
+      };
+    }
+  }
+  
+  agregarItem(): void {
+    const daysToAdd = 14;
+    const adquisicionDate = this.nuevoItem.adquisicionDate;
+    this.nuevoItem.finalizacionDate = new Date(adquisicionDate.getTime() + daysToAdd * 24 * 60 * 60 * 1000);
+    this.nuevoItem.devueltaDate = new Date(adquisicionDate.getTime() + (daysToAdd * 2) * 24 * 60 * 60 * 1000);
+    
+    this.listas.push({ ...this.nuevoItem });
+    this.toggleAgregar();
+  }
 }

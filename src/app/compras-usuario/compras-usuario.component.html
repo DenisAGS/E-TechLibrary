@@ -1,1 +1,100 @@
-<p>compras-usuario works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-user></app-menu-user>
+    </aside>
+
+    <div class="table-info">
+
+        <div class="acciones">
+            <h5>Mi lista de compras</h5>
+            <div class="space">
+                <button class="btn-comprar" (click)="toggleCompra()">Comprar</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Tipo</th>
+                        <th>Precio</th>
+                        <th>Categoria</th>
+                        <th>Fecha de compra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let lista of listas">
+                        <td>{{ lista.isbn }}</td>
+                        <td>{{ lista.titulo }}</td>
+                        <td>
+                            <div style="display: flex; align-items: center;">
+                                <span>{{ lista.autor }}</span>
+                            </div>
+                        </td>
+                        <td>{{ lista.tipo }}</td>
+                        <td>{{ lista.precio }}</td>
+                        <td>{{ lista.categoria }}</td>
+                        <td>{{ lista.compraDate | date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="sugerencias">
+            <h5 class="title-sugerencias">Sugerencias</h5>
+            <div class="sugerencias-book">
+                <div class="book">
+                    <img src="../../assets/images/Libros/yo soy malala.jpg" alt="">
+                    <div class="text-book">
+                        <h3>Yo soy malala</h3>
+                        <span>Malala</span>
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="btn-comprar-book">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="../../assets/images/Libros/todas las hadas del reino.jpg" alt="">
+                    <div class="text-book">
+                        <h3>Todas las hadas del reino</h3>
+                        <span>Laura Gallardo</span>
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="btn-comprar-book">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="../../assets/images/Libros/red queen.jpg" alt="">
+                    <div class="text-book">
+                        <h3>Red queen</h3>
+                        <span>Victoria aveyard</span>
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="btn-comprar-book">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+</body>
+
+</html>

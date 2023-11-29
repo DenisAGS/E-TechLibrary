@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DigitalTechBooks</title>
 </head>
 <body>
     <header>
@@ -41,7 +40,12 @@
         </div>
         <div class="libros-input">
             <label for="categoria">Categoria:</label>
-            <input type="text" id="categoria" [(ngModel)]="nuevoItem.categoria">
+            <select id="categoria" [(ngModel)]="nuevoItem.categoria">
+                <option value="educacion">Educacion</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="historia">Historia</option>
+                <option value="juvenil">Juvenil</option>
+            </select>
         </div>
         <div class="libros-input">
             <label for="adquisionDate">Fecha de adquisicion:</label>

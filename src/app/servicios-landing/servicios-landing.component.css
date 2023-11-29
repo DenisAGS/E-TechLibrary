@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+}
+footer{
+    margin-top: 30px;
+  }
+
+    .secciones{
+        margin-top: 75px;        width: 100%;
+    }
+
+
+    .inicio-servicio h1{
+        display: flex;
+        justify-content: center;
+        color: #78390A;
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .inicio-servicio .info-texto{
+        display: flex;
+        margin: 0 0px 0px 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .columna {
+        flex: 0 0 50%;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+  
+      .columna p{
+        margin-left: 50px;
+        color: #A9615E;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .columna img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .nuestros-servicios{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        background-image: url("../../assets/images/Generales/fondo-servicios.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 40px;
+        padding-left: 10%;
+      }
+
+      .nuestros-servicios h1{
+        display: flex;
+        justify-content: center;
+        color: #FFF;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 60px 40px 40px;
+      }
+
+      .nuestros-servicios .info-servicios{
+        border-radius: 10px;
+        background: rgba(217, 113, 34, 0.76);
+        width: 459px;
+        height: 170px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .info-servicios .img-servicios{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.65);
+        width: 176px;
+        height: 141px;
+        flex-shrink: 0;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .info-servicios .lista{
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+
+      .info-servicios .lista h6{
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .columnas-servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+      }
+
+      .servicios-seccion .servicios-content{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .servicios-content img{
+        width: 40%;
+    }
+
+    .servicios-content{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .servicios-content ul{
+        color: #797D68;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 50px;
+    }
+    
+    .servicios-seccion h3{
+        display: flex;
+        margin: 30px;
+        color: #78390A;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        justify-content: center;
+    }
+
+    .servicios-seccion .texto{
+        color: #907046;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+        display:flex;
+        margin-left: 10%;
+    }

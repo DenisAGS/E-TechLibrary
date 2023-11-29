@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>E-TechLibrary</title>
+</head>
+<body>
+    <aside class="main-sidebar">
+
+        <div class="sidebar">
+            <nav class="mt-2">
+                <div class="user-link" >
+                    <div class="img-user">
+                        <i class="fas fa-user"></i>                    </div>
+                    <div class="info-user">
+                        <h6>Daniel Rosas</h6>
+                        <a routerLink="/editar-cuenta">Editar cuenta</a>
+                    </div>
+                </div>
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <li class="nav-item">
+                        <a routerLink="/mi-lista-usuario" class="nav-link">
+                            <i class="fas fa-list"></i>
+                            <p class="hidden-text">
+                                Mi lista
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/compras-usuario" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="hidden-text">
+                                Compras
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/catalogo-usuario" class="nav-link">
+                            <i class="fas fa-book"></i>
+                            <p class="hidden-text">
+                                Catalogo
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/reserva-usuario" class="nav-link">
+                            <i class="fas fa-money-bill"></i>
+                            <p class="hidden-text">
+                                Reserva
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/servicio-usuario" class="nav-link">
+                            <i class="fas fa-life-ring"></i>
+                            <p class="hidden-text">
+                                Servicios
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item cerrar-sesion">
+                            <a routerLink="/iniciar-sesion" class="nav-link">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <p class="hidden-text">
+                                    Cerrar sesion 
+                                </p>
+                            </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+</body>
+</html>

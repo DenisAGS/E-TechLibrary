@@ -1,0 +1,122 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.text-editar{
+    display: flex;
+    margin-left: 12%;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-editar h5{
+    color: #515656;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-editar img{
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.datos{
+    justify-content: center;
+    display: flex;
+    gap: 15%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.datos label{
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.datos input{
+    color: #656161;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 344px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #CCC;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.name input{
+    background: #F0F0F0;
+    flex-shrink: 0;
+    color: #656161;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+}
+
+.datos-direccion{
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-direccion input{
+    background: #FFF;
+}
+
+.password-input-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .readonly-input::placeholder {
+    color: #888; 
+    font-style: italic; 
+  }
+  
+  .readonly-input[readonly] {
+    cursor: not-allowed; 
+  }
+  
+  .info-perfil button{
+    display: flex;
+    margin-left: 68.6%;
+    width: 214px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #d68923;
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }

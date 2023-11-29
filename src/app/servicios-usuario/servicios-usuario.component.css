@@ -1,0 +1,109 @@
+h5{
+    color: #515656;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.acciones{
+    margin-top: 30px;
+    margin-left: 7%;
+}
+
+.quejas{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.datos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos label{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.datos input{
+    border-radius: 5px;
+    background: #DFE1E6;
+    width: 276px;
+    height: 33px;
+    flex-shrink: 0;
+    border: none;
+}
+
+.content-quejas{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-quejas input{
+    width: 600px;
+    height: 60px;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+}
+
+.contenido .btn-contenido{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.btn-contenido button{
+    border-radius: 10px;
+    background-color: #ca631e;
+    width: 128px;
+    height: 36px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.faq h5{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .pregunta {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .respuesta {
+    margin-top: 5px;
+  }
+  
+  
+  .pregunta {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .respuesta {
+    margin-top: 5px;
+    display: none;
+  }

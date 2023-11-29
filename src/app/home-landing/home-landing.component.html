@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>E-TechLibrary</title>
+</head>
+
+<body>
+    <header>
+        <app-header-landing></app-header-landing>
+    </header>
+
+    <div class="secciones">
+        <section class="inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#D97122" fill-opacity="1"
+                    d="M0,192L26.7,176C53.3,160,107,128,160,106.7C213.3,85,267,75,320,80C373.3,85,427,107,480,133.3C533.3,160,587,192,640,208C693.3,224,747,224,800,192C853.3,160,907,96,960,106.7C1013.3,117,1067,203,1120,229.3C1173.3,256,1227,224,1280,229.3C1333.3,235,1387,277,1413,298.7L1440,320L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+                </path>
+            </svg>
+            <div class="texto-inicio">
+                <h1>TE DAMOS LA BIENVENIDA A LA BIBLIOTECA TechLibrary</h1>
+                <h2>Descubre miles de nuevos libros</h2>
+            </div>
+        </section>
+        <section class="book-carrusel">
+            <h3>Sumérgete en el Mundo de los Libros</h3>
+
+            <div class="carrusel">
+                <div class="libros"
+                    *ngFor="let libro of libros.slice(currentIndex, currentIndex + visibleLibros); let i = index"
+                    (click)="mostrarLibro(currentIndex + i)">
+                    <div class="libro" [ngClass]="{'activo': i === currentIndex}">
+                        <img [src]="libro.imagen" alt="">
+                        <div class="info-libros">
+                            <span><b>Título:</b> {{ libro.titulo }}</span>
+                            <span><b>Autor:</b> {{ libro.autor }}</span>
+                            <p><b>Sinopsis:</b> {{ libro.sinopsis }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-acciones">
+                <button id="libroAnterior" (click)="libroAnterior()">Anterior</button>
+                <button id="SiguienteLibro" (click)="siguienteLibro()">Siguiente</button>
+            </div>
+        </section>
+        <section class="servicios-landing">
+            <h3>Servicios destacados</h3>
+
+            <div class="servicios">
+                <img src="../../assets/images/Generales/libros.png" alt="">
+                <ul>
+                    <li>Catálogo en línea</li>
+                    <li>Reservas en línea</li>
+                    <li>Renovación en línea</li>
+                    <li>Recomendaciones de lectura</li>
+                </ul>
+                <img src="../../assets/images/Generales/libro1.png" alt="">
+            </div>
+        </section>
+
+        <footer>
+            <app-footer-landing></app-footer-landing>
+        </footer>
+    </div>
+
+</body>
+
+</html>

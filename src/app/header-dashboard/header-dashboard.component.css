@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0px;
+    background-color: rgb(206, 206, 195);;
+
+}
+
+.title-dashboard{
+    margin-left: 40%;
+}
+
+.title-dashboard h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1300px){
+    header{
+        margin-top: -5px;
+    }
+
+    .title-dashboard{
+        margin-left: 40%;
+    }
+
+    .title-dashboard h1{
+        font-size: 20px;
+    }
+
+    .acerca-info a{
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .acerca-info img{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .title-dashboard{
+        margin-left: 22%;
+    }
+
+    .title-dashboard h1{
+        font-size: 20px;
+    }
+
+    .acerca-info a{
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .acerca-info img{
+        width: 30px;
+        height: 35px;
+    }
+
+}
+

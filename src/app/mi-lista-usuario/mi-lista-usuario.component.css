@@ -1,0 +1,95 @@
+.table-info{
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.5%;
+    margin-right: 20px;
+}
+
+h5{
+    color: #515656;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+table {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  thead {
+    background-color: rgb(207, 207, 207);
+    border-bottom: 1px #707070;
+  }
+
+  th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: #013E60;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  td{
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+.text-green {
+    color: green;
+  }
+  
+  .text-blue {
+    color: blue;
+  }
+  
+  .text-red {
+    color: red;
+  }
+
+  .acciones{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .acciones button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .acciones button:hover {
+    background-color: #966747;
+    color: #FFF;
+  }
+
+  .btn-agregar{
+    width: 128px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    color: #cf5300;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .btn-renovar{
+    width: 128px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #966747;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }

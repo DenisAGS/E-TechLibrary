@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+footer{
+    margin-top: 30px;
+  }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+.secciones{
+        margin-top: 75px;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    section {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .acerca-de-seccion h2, p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    h2{
+        color: #78390A;
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .acerca-de-seccion p{
+        color: #A9615E;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .mision-vision-seccion {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(194, 130, 69);
+        width: 100%;
+    }
+
+    .mision-vision-seccion img{
+        width: 23em;
+        height: auto;
+    }
+
+    .mision-vision-seccion h2{
+        margin-left: 20px;
+    }
+
+    .mision-vision-seccion p{
+        color: white;
+    }
+
+    .texto-mision-vision{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .mision, .vision {
+        flex: 1;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .equipo-seccion h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .equipo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .persona {
+        max-width: 300px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .persona img{
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }

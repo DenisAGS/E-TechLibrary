@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+footer{
+    margin-top: 30px;
+  }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+}
+
+.secciones{
+        margin-top: 75px;
+    }
+
+.inicio{
+    width: 100%;
+    height: 545px;
+    background-image: url("../../assets/images/Generales/Estudiantes.png");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.curve-svg {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    transform: scaleY(-1);
+}
+
+.texto-inicio{
+    width: 625px;
+    height: 199px;
+    flex-shrink: 0;
+    margin-left: 50px;
+    margin-top: -70px;
+}
+
+
+.texto-inicio h1{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.texto-inicio h2{
+    color: #D97122;
+    font-family: Forza;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+h3{
+    color: #78390A;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+/*Diseño del carrusel*/
+
+.book-carrusel .libros{
+    margin-top: 40px;
+    display: flex;
+}
+
+.book-carrusel .libro{
+    display: flex;
+}
+
+.book-carrusel .libros img{
+    width: 140px;
+    height: 224px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.book-carrusel .libros .info-libros{
+    display: flex;
+    flex-direction: column;
+    width: 338px;
+    height: 224px;
+    flex-shrink: 0;
+    color: #59534F;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.book-carrusel .libros .info-libros b{
+    color: #000;
+}
+
+.carrusel{
+    justify-content: center;
+    display: flex;
+}
+
+.book-carrusel .btn-acciones{
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-acciones button{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #D97122;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.servicios-landing{
+    margin-left: 10px;
+}
+
+.servicios-landing .servicios{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.servicios ul{
+    margin-left: 50px;
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    list-style-type:square;
+}
+
+.servicios ul li.activo {
+    background-color: #ff6347
+}

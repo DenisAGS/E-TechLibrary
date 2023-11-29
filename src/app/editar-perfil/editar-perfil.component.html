@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-TechLibrary</title>
+</head>
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-user></app-menu-user>
+    </aside>
+
+    <div class="info-perfil">
+        <div class="text-editar">
+            <h5>Editar perfil</h5>
+        </div>
+        <div class="datos">
+            <div class="name">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" readonly placeholder="Daniel" class="readonly-input">
+                
+                <label for="apellido-paterno">Apellido paterno:</label>
+                <input type="text" id="apellido-paterno" name="apellido-paterno" readonly placeholder="Rosas" class="readonly-input">
+                
+                <label for="apellido-materno">Apellido materno:</label>
+                <input type="text" id="apellido-materno" name="apellido-materno" readonly placeholder="De jesus" class="readonly-input">                
+            </div>
+            <div class="datos-direccion">
+                <label for="label4">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+            
+                <label for="label5">Correo electronico:</label>
+                <input type="email" id="email" name="email"> 
+            
+                <label for="password">Contraseña:</label>
+                <div class="password-input-container">
+                    <input type="{{ passwordVisible ? 'text' : 'password' }}" id="password" name="password" class="password-input">
+                    <span class="toggle-password" (click)="togglePasswordVisibility()">
+                        <i class="fas" [class.fa-eye]="!passwordVisible" [class.fa-eye-slash]="passwordVisible"></i>
+                    </span>
+                </div>
+              </div>
+        </div>
+        <div class="btn-actualizar">
+            <button>Actualizar perfil</button>
+        </div>
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-user></app-menu-user>
+    </aside>
+
+        <div class="acciones">
+            <h5>Sugerencias y quejas</h5>
+
+            <div class="content-datos">
+                <div class="quejas">
+                    <div class="datos">
+                        <label for="comentario">Tipo de comentario:</label>
+                        <input type="text">
+                    </div>
+                    <div class="datos">
+                        <label for="referencia">Numero de referencia:</label>
+                        <input type="text">
+                    </div>
+                    <div class="datos">
+                        <label for="comentario">Consentimiento para respuesta:</label>
+                        <input type="checkbox">
+                    </div> 
+                </div>
+                <div class="contenido">
+                    <div class="content-quejas">
+                        <label for="asunto">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div class="btn-contenido">
+                        <button>Enviar</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="faq">
+                <h5>Preguntas Frecuentes</h5>
+        
+                <div *ngFor="let pregunta of preguntas; let index = index" class="faq-item">
+                    <div class="pregunta" (click)="toggleRespuesta(index)" data-toggle="collapse" [attr.data-target]="'#respuesta' + index">
+                      {{ pregunta.pregunta }}
+                    </div>
+                    <div [id]="'respuesta' + index" class="collapse" [ngClass]="{'show': isExpandida(index)}">
+                      {{ pregunta.respuesta }}
+                    </div>
+                  </div>
+            </div>
+        </div>
+</body>
+
+</html>
